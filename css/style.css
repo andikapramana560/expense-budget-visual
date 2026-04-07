@@ -93,6 +93,7 @@ header h1 {
     font-size: 2rem;
     background: linear-gradient(135deg, var(--text-main), var(--text-muted));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
 }
@@ -456,7 +457,7 @@ main {
 .item-amount.income { color: var(--color-income); }
 .item-amount.expense { color: var(--color-expense); }
 
-.delete-btn {
+.delete-btn, .edit-btn {
     background: transparent;
     border: none;
     color: var(--text-muted);
@@ -473,6 +474,11 @@ main {
 .delete-btn:hover {
     color: var(--color-expense);
     background: hsla(350, 70%, 55%, 0.1);
+}
+
+.edit-btn:hover {
+    color: var(--primary-color);
+    background: hsla(250, 80%, 65%, 0.1);
 }
 
 .empty-state {
